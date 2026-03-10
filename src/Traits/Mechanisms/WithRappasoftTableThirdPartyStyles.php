@@ -43,7 +43,7 @@ trait WithRappasoftTableThirdPartyStyles
         $styles = static::tableThirdPartyCss($options);
 
         // HTML Label.
-        $html = $debug ? ['<!-- Rappasoft Table Third Party Styles -->'] : [];
+        $html = $debug ? [] : [];
 
         $html[] = $styles;
 
