@@ -48,7 +48,7 @@ trait WithRappasoftTableThirdPartyScripts
         $scripts = static::tableThirdpartyJs($options);
 
         // HTML Label.
-        $html = $debug ? ['<!-- Rappasoft Third Party Scripts -->'] : [];
+        $html = $debug ? [] : [];
 
         $html[] = $scripts;
 
