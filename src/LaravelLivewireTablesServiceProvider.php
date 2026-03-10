@@ -15,11 +15,11 @@ class LaravelLivewireTablesServiceProvider extends ServiceProvider
     public function boot(): void
     {
 
-        if (class_exists(AboutCommand::class) && class_exists(\Composer\InstalledVersions::class)) {
-            AboutCommand::add('Rappasoft Laravel Livewire Tables', [
-                'Version' => \Composer\InstalledVersions::getPrettyVersion('rappasoft/laravel-livewire-tables'),
-            ]);
-        }
+        // if (class_exists(AboutCommand::class) && class_exists(\Composer\InstalledVersions::class)) {
+        //     AboutCommand::add('Rappasoft Laravel Livewire Tables', [
+        //         'Version' => \Composer\InstalledVersions::getPrettyVersion('rappasoft/laravel-livewire-tables'),
+        //     ]);
+        // }
 
         $this->mergeConfigFrom(
             __DIR__.'/../config/livewire-tables.php', 'livewire-tables'
