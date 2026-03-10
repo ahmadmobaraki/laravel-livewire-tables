@@ -50,7 +50,7 @@ trait WithRappasoftTableScripts
         $scripts = static::tableJs($options);
 
         // HTML Label.
-        $html = $debug ? ['<!-- Rappasoft Core Table Scripts -->'] : [];
+        $html = $debug ? [] : [];
 
         $html[] = $scripts;
 
